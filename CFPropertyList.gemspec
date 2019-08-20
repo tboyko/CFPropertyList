@@ -8,10 +8,8 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "Read, write and manipulate both binary and XML property lists as defined by apple"
   s.description = "This is a module to read, write and manipulate both binary and XML property lists as defined by apple."
-  s.files = FileList["lib/**/*"].to_a + ['LICENSE', 'README.md', 'THANKS', 'README.rdoc']
+  s.files = Dir.glob("lib/**/*").to_a + ['LICENSE', 'README.md', 'THANKS', 'README.rdoc']
   s.require_path = "lib"
-  #s.autorequire = "name"
-  #s.test_files = FileList["{test}/**/*test.rb"].to_a
   s.has_rdoc = true
   s.extra_rdoc_files = ["README.rdoc"]
   s.add_development_dependency("rake",">=0.7.0")
